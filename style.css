@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+body{
+    font-family: 'comfortaa';
+    background-color:rgb(128,128,128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main{
+    position: absolute;
+    top:20%;
+    border: 3px solid ;
+    border-radius: 5px;
+    background-color: #14366b;
+    display: flex;
+    flex-direction: column;
+    height:230px;
+    width:220px;
+}
+h2{
+    margin:0;}
+
+.number{
+    background-color: #19a879;
+}
+.operator{
+    background-color: #d61324;
+}
+.normal{
+    /* display: grid;
+    grid-template-columns: 20px px; */
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 10px;
+}
+.right{
+    position:absolute;
+    right:0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.right button{
+    padding: 10px;
+    margin:9px;
+    position: relative;
+    bottom:1px
+}
+
+
+.zero{
+    position: relative;
+    left:120%;
+}
+
+
+#display{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: fixed;
+    top:14%;
+    margin-top:0;
+    width:222px;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #ADD8E6;
+    overflow: hidden;
+}
+
+
+
+
+
+button{
+    border-radius: 5px;
+    padding:10px;
+    margin:5px;
+    border:solid black;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#C{
+    position:relative;
+    background-color: #FFD700 ;
+    font-family: 'comfortaa';
+    padding:10px;
+    left:60px;
+}
+
+
+
+/* I am boring......I am repeating myself :/*/
+#result{
+    background-color: aqua;
+    position: relative;
+    right:240%;
+}
